@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="BasePage.cs" />
     <Compile Include="Home\HomePage.cs" />
+    <Compile Include="Inbox\InboxPage.cs" />
     <Compile Include="Login\LoginPage.cs" />
     <Compile Include="Options.cs" />
     <Compile Include="PageComponent.cs" />
