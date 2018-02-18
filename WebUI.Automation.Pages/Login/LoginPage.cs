@@ -7,7 +7,7 @@ namespace WebUI.Automation.Pages.Login
 	public class LoginPage : BasePage
 	{
 		private Options _options;
-		
+
 
 		public LoginPage(IExtendedWebDriver webDriver, Options options) : base(webDriver)
 		{
@@ -16,9 +16,9 @@ namespace WebUI.Automation.Pages.Login
 		}
 
 		public void NavigateTo()
-        {  
-             WebDriver.NavigateTo(_options.SiteUri);  
-         }
+		{
+			WebDriver.NavigateTo(_options.SiteUri);
+		}
 
 		[FindsBy(How = How.XPath, Using = "//input[@type='email']")]
 

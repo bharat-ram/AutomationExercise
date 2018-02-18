@@ -19,7 +19,6 @@ namespace WebUI.Automation.Pages
 
 		public WarningDialogComponent WarningDialog { get; set; }
 
-		//[FindsBy(How = How.CssSelector, Using = "[data-auto='PageTitle']")]
 		[FindsBy(How = How.TagName, Using = "title")]
 		public IWebElement PageTitle { get; set; }
 
@@ -32,9 +31,7 @@ namespace WebUI.Automation.Pages
 
 		public virtual void VerifyPage()
 		{
-			//WebDriver.WaitUntilElementExists(PageTitle);
 
-			//return PageTitle.Text.Equals(PageTitleName);
 			Debug.Assert(PageTitle.Text.Equals(ExpectedPageTitle));
 		}
 

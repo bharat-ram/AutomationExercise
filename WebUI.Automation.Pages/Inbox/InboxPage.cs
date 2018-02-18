@@ -13,8 +13,8 @@ namespace WebUI.Automation.Pages.Inbox
 	{
 		private Options _options;
 
-		
-			public InboxPage(IExtendedWebDriver webDriver, Options options) : base(webDriver)
+
+		public InboxPage(IExtendedWebDriver webDriver, Options options) : base(webDriver)
 		{
 			_options = options;
 			ExpectedPageTitle = "Inbox";
@@ -37,8 +37,8 @@ namespace WebUI.Automation.Pages.Inbox
 		[FindsBy(How = How.XPath, Using = "//a[text()='Sign out']")]
 		public IWebElement SignOutButton
 		{
-			
-		get; set;
+
+			get; set;
 		}
 
 

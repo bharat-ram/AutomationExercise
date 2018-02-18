@@ -35,7 +35,7 @@ namespace WebUI.Automation.Tests.Steps
 			login.NextButton.Click();
 		}
 
-		
+
 		[Then("I see my Gmail Inbox")]
 		public void IShouldSeeMyInbox()
 		{
@@ -79,16 +79,16 @@ namespace WebUI.Automation.Tests.Steps
 
 		}
 
-		[Then("I remain on the Gmail login screen")]  
-       public void RemainOnLoginScreen()
-        {
+		[Then("I remain on the Gmail login screen")]
+		public void RemainOnLoginScreen()
+		{
 			WebDriver.WaitUntilTitleIs(login.ExpectedPageTitle);
-		}  
-   
-       [Then("I am shown a message indicating that my credentials are incorrect")]  
-         public void CheckForErrorMessage()
-        {
-			
+		}
+
+		[Then("I am shown a message indicating that my credentials are incorrect")]
+		public void CheckForErrorMessage()
+		{
+
 			var e = login.WrongPaswwordError;
 			WaitUntilVisible(e);
 
